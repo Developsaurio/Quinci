@@ -1,5 +1,6 @@
 import React from 'react';
 import star from './assets/images/star.svg';
+import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 import Buttons from './components/Buttons';
 import CircularButtons from './components/CircularButtons';
@@ -10,11 +11,20 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="container">
+        <header className="App-header">
+          <section className="component">
+            <img src={logo} className="logo" alt="logo" />
+            <Card />
+            <div className="row">
+              <div className="line-hr"> <hr /></div>
+              <div><h1 className="title1">AMBIANCE</h1></div>
+              <div className="line-hr"> <hr /></div>
+            </div>
+          </section>
+        
+        
         <img src={star} className="App-logo" alt="star" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -35,9 +45,10 @@ function App() {
       </section>
 
       <section className="component">
-        <Card />
+        
       </section>
       </header>
+      </div>
     </div>
   );
 }
