@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import star from './assets/images/star.svg';
+import './assets/css/App.css';
+import Buttons from './components/Buttons';
+import CircularButtons from './components/CircularButtons';
+import SquareButtons from './components/SquareButtons';
+import Card from './components/Card';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={star} className="App-logo" alt="star" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +23,20 @@ function App() {
         >
           Learn React
         </a>
+        <section className="component">
+        <Buttons />
+      </section>
+      <section className="component">
+        <CircularButtons />
+      </section>
+
+      <section className="component">
+        <SquareButtons />
+      </section>
+
+      <section className="component">
+        <Card />
+      </section>
       </header>
     </div>
   );
