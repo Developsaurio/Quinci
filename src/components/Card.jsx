@@ -33,23 +33,23 @@ class Card extends Component {
 
   render() {
     return (
-      <div>
+      <div className="m-30">
         <button onClick={this.showMenu}>
-          Show menu
+            <i class="fas fa-flag-usa"></i> EN ▼
         </button>
         
         {
           this.state.showMenu
             ? (
               <div
-                className="menu"
+                className="menu m-30"
                 ref={(element) => {
                   this.dropdownMenu = element;
                 }}
               >
-                <button> Menu item 1 </button>
-                <button> Menu item 2 </button>
-                <button> Menu item 3 </button>
+                <button> <i class="fas fa-flag-usa"></i> EN </button>
+                <button> <i class="fas fa-flag"></i> ES</button>
+                <button> <i class="fab fa-canadian-maple-leaf"></i> Can</button>
               </div>
             )
             : (

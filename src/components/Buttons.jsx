@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
 import '../assets/css/buttons.css';
 
-class Buttons extends Component{
-    render(){
-        return (
-            <React.Fragment>  
-                <a
-                className="link-btn regular__btn"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer">
-                    Hellooo</a>
-            </React.Fragment>
-        )
-    }
-}
+const Buttons = ({ text, focused }) => (
+  <React.Fragment>
+    <button className={`regular__btn${focused ? ' focus' : '' }`} type="button">
+      {text}
+    </button>
+  </React.Fragment>
+);
+
 
 export default Buttons;

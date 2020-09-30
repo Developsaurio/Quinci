@@ -2,17 +2,24 @@ body{
   margin: 0;
   padding: 0;
   background-color: #202A3C ;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.component{
+  width: 100%;
+}
 .App {
   text-align: center;
 }
 
 .container {
   border: 3px solid rgb(255, 255, 255);
-  margin: 10px;
+  margin: 60px;
 }
-
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 20px;
+  }
+}
 .App-header {
   background-color: #202A3C;
   min-height: 96vh;
@@ -20,7 +27,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
   color: white;
 }
 
@@ -32,25 +39,39 @@ body{
 }
 .title1 {
   font-size: 25px;
+  color: #F5A623;
+  margin: 25px 20px;
+}
+.title2 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0px 20px;
+}
+.title3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0px 20px;
+}
+.line{
+  width: 33%;
+  width: -webkit-fill-available;
 }
 .line-hr{
   width: 33%;
+  width: -webkit-fill-available;
 }
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.set-width{
+  min-width: 70%;
+}
+ .App-logo {
+  height: 41px;
+  margin: 0 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -60,4 +81,61 @@ body{
   to {
     transform: rotate(360deg);
   }
-} */
+} 
+
+.m-30{
+  margin: 30px 0;
+}
+.mt-30{
+  margin-top: 30px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.width100{
+  width: 100%;
+}
+
+.width50{
+  width: 360px;
+}
+
+.center{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+
+}
+
+.border-bottom{
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.m-x{
+  margin: 10px 10px;
+}
+
+.bg-white{
+  background-color: white;
+  height: 99px;
+}
+.bg-white input{
+  color: black;
+}
+
+.bg-white ::placeholder{
+  color: #202A3C;
+}
